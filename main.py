@@ -33,9 +33,28 @@ while opcion != 5:
         
         
     elif opcion==2:
-        print("estoy en la 2")
+        
+
+
+      #Utilizando for en python para recorrer listar 
+      for i in productos:
+          print(i["nombre"])
+          print(i["precio"])
+
     elif opcion==3:
-        print("estoy en la 3")
+        #1. Preguntar a quien quieres eliminae
+        productoCambio = int(input("Digita el  id del producto a cambiar:"))
+        #1. Encontrar el elemento
+        for ProductoBuscado in productos:
+            encontrado=0
+            if ProductoBuscado["id"]==productoCambio:
+                encontrado=1
+            else:
+                encontrado=0
+        #2. Selecciono el elemento
+        #3. acceso a das propiedades que deseo editar
+
+        
     elif opcion==4:
         print("estoy en la 4")
     else:
